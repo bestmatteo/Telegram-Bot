@@ -1,6 +1,6 @@
 <h1>Telegram-Bot</h1>
 
-### An Selenium way to forward messages automaticaly 
+### An Selenium-way to forward messages automatically 
 
 ## Get started 
 
