@@ -33,7 +33,7 @@ Enter the url of your group/channels or PM one by one (With https://)
 
 Chrome will open up and setup the group.
 
-4. Setup the group that will receive the messages
+## Setup the group that will receive the messages
 
 Open Telegram via cellphone app and Pin the group at the top of your conversation history (Must the the first one pinned). 
 
