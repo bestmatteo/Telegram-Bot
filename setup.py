@@ -30,7 +30,7 @@ def doingGroup(groupY, urlX):
         sleep(2)
 
         driver.quit()
-        print("Processo Finalizado: Grupo 1")
+        print("Processo Finalizado.")
 
 
 def openMenu(driverX):
@@ -71,30 +71,50 @@ def newIDGroups():
 
 def filterGroups(answer1):
     print(answer1)
-    if answer1 == '1' or 9:
+    if answer1 == '9':
         url1 = input("Insira URL do Grupo 1: ")
         doingGroup("group1.js", url1)
 
-    
-
-    if answer1 == '2' or 9:
         url2 = input("Insira URL do Grupo 2: ")
         doingGroup("group2.js", url2)
 
-
-    if answer1 == 3 or 9:
         url3 = input("Insira URL do Grupo 3: ")
         doingGroup("group3.js", url3)
 
-
-    if answer1 == 4 or 9:
         url4 = input("Insira URL do Grupo 4: ")
         doingGroup("group4.js", url4)
 
-
-    if answer1 == 5 or 9:
         url5 = input("Insira URL do Grupo 5: ")
-        doingGroup("group5.js", url3)
+        doingGroup("group5.js", url5)
+        
+    if answer1 == '1':
+        url1 = input("Insira URL do Grupo 1: ")
+        doingGroup("group1.js", url1)
+        return 0
+
+
+    if answer1 == '2':
+        url2 = input("Insira URL do Grupo 2: ")
+        doingGroup("group2.js", url2)   
+        return 0
+
+
+    if answer1 == '3':
+        url3 = input("Insira URL do Grupo 3: ")
+        doingGroup("group3.js", url3)
+        return 0
+
+
+    if answer1 == '4':
+        url4 = input("Insira URL do Grupo 4: ")
+        doingGroup("group4.js", url4)
+        return 0
+
+
+    if answer1 == '5':
+        url5 = input("Insira URL do Grupo 5: ")
+        doingGroup("group5.js", url5)
+        return 0
 
 
 newAccount = input("Deseja adicionar uma nova conta? (0 = Não | Qualquer outro caractere = Sim )\n")
