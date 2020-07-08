@@ -27,7 +27,8 @@ Enter any key beside 0 and type:
 3...
 4...
 5 to setup group 5
-9 to setup ALL the five groups```
+9 to setup ALL the five groups
+```
 Enter the url of your group/channels or PM one by one (With https://)
 
 Chrome will open up and setup the group.
