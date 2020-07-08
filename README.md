@@ -33,6 +33,11 @@ Enter the url of your group/channels or PM one by one (With https://)
 
 Chrome will open up and setup the group.
 
+4. Find your chrome's profile path
+Open webscraping.py with a text editor, go to line 92 and edit the path to your user's path.
+Example: 
+```C:\\Users\\gusta\\AppData\\Local\\Google\\Chrome\\User Data\\Default```
+
 ## Setup the group that will receive the messages
 
 Open Telegram via cellphone app and Pin the group at the top of your conversation history (Must the the first one pinned). 
