@@ -16,7 +16,7 @@ pip install -r requirements.txt
 python setup.py
 ```
 Enter any key beside 0, chrome will open up and after that you must enter your telegram account.
-After 30 seconds or more, you will be able to continue the process after enter your telegram account by pressing any key.
+After 30 seconds or more, you will be able to continue the process after entering your telegram account by pressing any key.
 
 3. Setup groups/channels and PMs
 Enter any key beside 0 and type:
