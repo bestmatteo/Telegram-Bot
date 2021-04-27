@@ -4,7 +4,7 @@
 
 ## Get started 
 
-1. Install the requirementes
+1. Install the requirements
 
 ```
 pip install -r requirements.txt
