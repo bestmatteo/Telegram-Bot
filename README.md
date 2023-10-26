@@ -2,7 +2,7 @@
 
 #### DISCLAMER: When I created this bot, I was 17 and learning code, JS files are meant to be JSON files. You may change it if you want, but the code works.
 
-### An Selenium-way to forward messages automatically 
+### A Selenium-way to forward messages automatically 
 
 ## Get started 
 
