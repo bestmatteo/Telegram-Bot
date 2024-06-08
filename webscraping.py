@@ -19,8 +19,10 @@ import json
 #ToDo: Deixar o cliente selecionar os grupos
 
 
-url1 = input("URL do primeiro grupo: ")
-url2 = input("URL do segundo grupo: ")
+# url1 = input("URL do primeiro grupo: ")
+url1 = input("URL of first group: ")
+#url2 = input("URL do segundo grupo: ")
+url2 = input("URL of the second group: ")
 
 if url2 != '0':
     url3 = input("URL do terceiro grupo: ")

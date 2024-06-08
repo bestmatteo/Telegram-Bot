@@ -56,7 +56,8 @@ def findMessages(groupX, driverY):
             fp.writelines(idMessage)
 
 def newIDGroups():
-    answerX = input("Qual grupo deseja configurar? (0 = Nenhum | 1 = Grupo 1 | 2 = Grupo 2 | 3 = Grupo 3 | 4 = Grupo 4 | 5 = Grupo 5 | 9 = Todos os grupos\n")
+    # answerX = input("Qual grupo deseja configurar? (0 = Nenhum | 1 = Grupo 1 | 2 = Grupo 2 | 3 = Grupo 3 | 4 = Grupo 4 | 5 = Grupo 5 | 9 = Todos os grupos\n")
+    answerX = input("Which group do you want to configure? (0 = None | 1 = Group 1 | 2 = Group 2 | 3 = Group 3 | 4 = Group 4 | 5 = Group 5 | 9 = All groups\n")
     if answerX == '0':
         return False
 
@@ -64,7 +65,8 @@ def newIDGroups():
         filterGroups(answerX)
 
     
-    again = input("Deseja configurar outro grupo? (0 = Não | Qualquer outro caractere = Sim\n")
+    # again = input("Deseja configurar outro grupo? (0 = Não | Qualquer outro caractere = Sim\n")
+    again = input("Do you want to configure another group? (0 = No | Any other character = Yes\n")
 
     if again != '0':
         newIDGroups()
@@ -72,47 +74,57 @@ def newIDGroups():
 def filterGroups(answer1):
     print(answer1)
     if answer1 == '9':
-        url1 = input("Insira URL do Grupo 1: ")
+        #url1 = input("Insira URL do Grupo 1: ")
+        url1 = input("Enter Group 1 URL: ")
         doingGroup("group1.js", url1)
 
-        url2 = input("Insira URL do Grupo 2: ")
+        # url2 = input("Insira URL do Grupo 2: ")
+        url2 = input("Enter Group 2 URL: ")
         doingGroup("group2.js", url2)
 
-        url3 = input("Insira URL do Grupo 3: ")
+        #url3 = input("Insira URL do Grupo 3: ")
+        url3 = input("Enter Group 3 URL: ")
         doingGroup("group3.js", url3)
 
-        url4 = input("Insira URL do Grupo 4: ")
+        # url4 = input("Insira URL do Grupo 4: ")
+        url4 = input("Enter Group 4 URL: ")
         doingGroup("group4.js", url4)
 
-        url5 = input("Insira URL do Grupo 5: ")
+        # url5 = input("Insira URL do Grupo 5: ")
+        url5 = input("Enter Group 5 URL: ")
         doingGroup("group5.js", url5)
         
     if answer1 == '1':
-        url1 = input("Insira URL do Grupo 1: ")
+        # url1 = input("Insira URL do Grupo 1: ")
+        url1 = input("Enter Group 1 URL: ")
         doingGroup("group1.js", url1)
         return 0
 
 
     if answer1 == '2':
-        url2 = input("Insira URL do Grupo 2: ")
+        # url2 = input("Insira URL do Grupo 2: ")
+        url2 = input("Enter Group 2 URL: ")
         doingGroup("group2.js", url2)   
         return 0
 
 
     if answer1 == '3':
-        url3 = input("Insira URL do Grupo 3: ")
+        # url3 = input("Insira URL do Grupo 3: ")
+        url3 = input("Enter Group 3 URL: ")
         doingGroup("group3.js", url3)
         return 0
 
 
     if answer1 == '4':
-        url4 = input("Insira URL do Grupo 4: ")
+        # url4 = input("Insira URL do Grupo 4: ")
+        url4 = input("Enter Group 4 URL: ")
         doingGroup("group4.js", url4)
         return 0
 
 
     if answer1 == '5':
-        url5 = input("Insira URL do Grupo 5: ")
+        # url5 = input("Insira URL do Grupo 5: ")
+        url5 = input("Enter Group 5 URL: ")
         doingGroup("group5.js", url5)
         return 0
 
@@ -127,17 +139,16 @@ if newAccount != '0':
 
     driver.get("https://web.telegram.org")
 
-    print("Por favor, entre manualmente a sua conta no Browser que foi aberto\n")
-    print("Depois de 30 segundos, será possível continuar\n")
-    sleep(30)
-    input("Ao terminar, insira qualquer caractere para continuar...\n")
+    # print("Por favor, entre manualmente a sua conta no Browser que foi aberto\n")
+    print("Please manually log in to your account in the browser you opened\n")
 
-newID = input("Deseja configurar novos grupos? (0 = Não | Qualquer outro caractere = Sim )\n")
+    # print("Depois de 30 segundos, será possível continuar\n")
+    print("After 30 seconds, you can continue\n")
+    sleep(120)
+    # input("Ao terminar, insira qualquer caractere para continuar...\n")
+    input("When finished, enter any character to continue...\n")
 
+# newID = input("Deseja configurar novos grupos? (0 = Não | Qualquer outro caractere = Sim )\n")
+newID = input("Want to set up new groups? (0 = No | Any other character = Yes)\n")
 if newID != '0':
     newIDGroups()
-
-
-    
-        
-
